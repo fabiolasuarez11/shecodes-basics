@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>👩🏻‍💻 Challenges Week 2 SheCodes</title>
+  <style>
+    body {
+      font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+    }
+
+    section {
+      margin: 120px 0;
+    }
+
+    h1,
+    h2 {
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 48px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #272044;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      color: #885df1;
+      padding: 0 0 24px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      font-family: PT Mono, monospace;
+      text-align: center;
+    }
+
+    button {
+      border-radius: 25px;
+      margin: 0 auto;
+      display: block;
+      background-color: #fff;
+      border: 1px solid #885df1;
+      color: #885df1;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      text-decoration: none;
+      transition: all 200ms ease;
+    }
+
+    button:hover {
+      color: #fff;
+      background: #885df1;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>
+      👩‍💻 She Codes is a Coding Workshop for Women
+    </h1>
+    <h2>
+      Access a new career in Technology
+    </h2>
+    <p>
+      She Codes teaches coding, design and management skills to women
+      <br />
+      <strong>
+        Limited amount of spots!
+      </strong>
+    </p>
+    <br />
+    <button>
+      Apply Now
+    </button>
+  </section>
+  <script>
+    /* Challenge #2
+    const hometown = prompt('What is your hometown?');
+    alert(`You are from ${hometown}`);
+    const firstName = prompt('What is your first name?');
+    const lastName = prompt('What is your last name?');
+    alert(`Welcome ${firstName} ${lastName} 🙂!`); */
+
+    /* Challenge #3
+    const ageRequired = prompt('How old are you?');
+
+    if (ageRequired >= 18) {
+      alert(`You are ${ageRequired} and you can apply to SheCodes! 🙌🏼 `);
+    }
+    if (ageRequired < 18) {
+      alert(`You are ${ageRequired} and you can't apply to SheCodes! 😔`);
+    } */
+
+    /* Challenge #4
+    const currentHour = prompt('What is the current hour? Please enter you current hour in as an integer number between 0 to 24.');
+
+    if (currentHour < 11) {
+      alert('Good morning! ☀️');
+    } else if (currentHour >= 12 && currentHour <= 17) {
+      alert('Good afternoon! 😎');
+    }
+    else {
+      alert('Good evening! 🌙');
+    } */
+
+    /* Challenge #5
+    const originCountry = prompt('What country are you from?');
+    const country = originCountry.charAt(0).toUpperCase() + originCountry.slice(1);
+
+    if (country === 'Brazil' || country === 'Portugal') {
+      alert('You speak Portuguese! 🙌🏼')
+    } else {
+      alert("You don't speak Portuguese! 😊");
+    } */
+
+    /* Challenge #6
+    function canSpeakPortuguese() {
+      const originCountry = prompt('What country are you from?');
+      const country = originCountry.charAt(0).toUpperCase() + originCountry.slice(1);
+      console.log(country);
+
+      if (country === 'Brazil' || country === 'Portugal') {
+        alert('You speak Portuguese! 🙌🏼')
+      } else {
+        alert("Go learn Portuguese! 🇵🇹");
+      }
+    }
+    canSpeakPortuguese(); */
+
+    // Challenge #7
+    function applyNow() {
+      const name = prompt('What is your first name?');
+      const ageRequired = prompt('How old are you?');
+
+      const h1 = document.querySelector('h1');
+
+      if (ageRequired >= 18) {
+        h1.innerHTML = `Hi, ${name}! Welcome to SheCodes! 🙌🏼`;
+      } else {
+        h1.innerHTML = `Sorry, ${name}! You cannot join SheCodes 😔`;
+      }
+    }
+
+    const applyNowButton = document.querySelector('button');
+    applyNowButton.addEventListener('click', applyNow);
+
+  </script>
+</body>
+
+</html>
